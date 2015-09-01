@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'event-emitter/lib/all-off',
+1 verbose cli   '--save' ]
+2 info using npm@2.12.1
+3 info using node@v0.12.7
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/paul/github/sanity/package.json
+6 warn package.json browser.html@1.0.0 No README data
+7 warn package.json browser.html@1.0.0 No license field.
+8 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/babel-runtime/package.json
+9 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/babelify/package.json
+10 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/browserify/package.json
+11 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/ecstatic/package.json
+12 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/event-emitter/package.json
+13 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/graphene-marionette-runner/package.json
+14 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/gulp/package.json
+15 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/gulp-concat/package.json
+16 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/gulp-rename/package.json
+17 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/gulp-sourcemaps/package.json
+18 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/gulp-uglify/package.json
+19 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/gulp-util/package.json
+20 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/jscs/package.json
+21 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/marionette-client/package.json
+22 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/mocha/package.json
+23 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/vinyl-buffer/package.json
+24 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/vinyl-source-stream/package.json
+25 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/virtual-dom/package.json
+26 verbose installManyTop reading scoped package data from /Users/paul/github/sanity/node_modules/watchify/package.json
+27 info package.json marionette-client@1.7.5 No repository field.
+28 info package.json gulp-rename@1.2.2 No license field.
+29 info package.json mocha@2.2.4 No license field.
+30 verbose readDependencies loading dependencies from /Users/paul/github/sanity/package.json
+31 silly cache add args [ 'event-emitter/lib/all-off', null ]
+32 verbose cache add spec event-emitter/lib/all-off
+33 silly cache add parsed spec { raw: 'event-emitter/lib/all-off',
+33 silly cache add   scope: null,
+33 silly cache add   name: null,
+33 silly cache add   rawSpec: 'event-emitter/lib/all-off',
+33 silly cache add   spec: '/Users/paul/github/sanity/event-emitter/lib/all-off',
+33 silly cache add   type: 'local' }
+34 error addLocal Could not install /Users/paul/github/sanity/event-emitter/lib/all-off
+35 verbose stack Error: ENOENT, open '/Users/paul/github/sanity/event-emitter/lib/all-off'
+35 verbose stack     at Error (native)
+36 verbose cwd /Users/paul/github/sanity
+37 error Darwin 15.0.0
+38 error argv "node" "/usr/local/bin/npm" "install" "event-emitter/lib/all-off" "--save"
+39 error node v0.12.7
+40 error npm  v2.12.1
+41 error path /Users/paul/github/sanity/event-emitter/lib/all-off
+42 error code ENOENT
+43 error errno -2
+44 error enoent ENOENT, open '/Users/paul/github/sanity/event-emitter/lib/all-off'
+44 error enoent This is most likely not a problem with npm itself
+44 error enoent and is related to npm not being able to find a file.
+45 verbose exit [ -2, true ]

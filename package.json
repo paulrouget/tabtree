@@ -29,7 +29,10 @@
     "build-server": "gulp build-server",
     "build": "NODE_ENV=production gulp build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "event-emitter": "^0.3.3",
+    "virtual-dom": "^2.1.1"
+  },
   "devDependencies": {
     "babel-runtime": "5.8.20",
     "babelify": "6.1.3",

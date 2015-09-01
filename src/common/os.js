@@ -6,4 +6,4 @@ const platform = navigator.platform.startsWith('Win') ? 'win' :
                  navigator.platform.startsWith('FreeBSD') ? 'x11' :
                  navigator.platform;
 
-exports.platform = platform;
+module.exports = platform;

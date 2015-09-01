@@ -65,7 +65,6 @@ const HTML = `
     </div>
     <div id='sidebar2'></div>
   </div>
-
 `;
 
 const style = document.createElement('style');
@@ -73,8 +72,8 @@ style.textContent = CSS;
 document.head.appendChild(style);
 document.body.innerHTML = HTML;
 
-const {Deck} = require('./deck');
-Deck.init(document.querySelector('#deck'));
+const {TabTree} = require('./tabtree');
+var tree = new TabTree(document.querySelector('#deck'));
 
-const {Sidebar} = require('./sidebar');
-Sidebar.init(document.querySelector('#sidebar2'));
+const Sidebar = require('./sidebar');
+Sidebar.init(document.querySelector('#sidebar2'), tree);
