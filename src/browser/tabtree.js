@@ -212,11 +212,13 @@ TabTree.prototype = {
   },
 
   selectNextTab: function() {
-    this.selectTab(this.getNextTabAndLool());
+    var previouslySelected = this.getSelectedTab();
+    this.selectTab(this.getNextTabAndLoop(previouslySelected));
   },
 
   selectPrevTab: function() {
-    this.selectTab(this.getPreviousTabAndLoop());
+    var previouslySelected = this.getSelectedTab();
+    this.selectTab(this.getPreviousTabAndLoop(previouslySelected));
   },
 
   getFirstTab: function() {
@@ -247,7 +249,7 @@ TabTree.prototype = {
     return nextNode ? nextNode.tab : null;
   },
 
-  getNextTabAndLool: function(tab) {
+  getNextTabAndLoop: function(tab) {
     var nextTab = this.getNextTab(tab);
     if (!nextTab) {
       nextTab = this.getFirstTab();
